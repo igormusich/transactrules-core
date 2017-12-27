@@ -39,4 +39,5 @@ public class PositionType {
         this.positionTypeId = positionTypeId;
     }
 
+
 }

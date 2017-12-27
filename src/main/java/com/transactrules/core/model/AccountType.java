@@ -149,5 +149,7 @@ public class AccountType {
     }
 
 
-
+    public Optional<DateType> getDateTypeByName(String name) {
+        return  dateTypes.stream().filter(dt-> dt.getName().equalsIgnoreCase(name)).findFirst();
+    }
 }

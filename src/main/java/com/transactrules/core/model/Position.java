@@ -58,6 +58,11 @@ public class Position {
         }
     }
 
+    public Boolean isPositionType(PositionType positionType){
+        return positionTypeId.equalsIgnoreCase(positionType.getPositionTypeId());
+    }
 
-
+    public Boolean isPositionType(String positionTypeId){
+        return positionTypeId.equalsIgnoreCase(positionTypeId);
+    }
 }
