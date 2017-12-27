@@ -41,7 +41,7 @@ public class AccountValuationServiceImpl implements AccountValuationService {
     private void initializePositions(Account account) {
         for (PositionType positionType: accountType.getPositionTypes()) {
 
-            Optional<Position> position = account.getPositionByPositionTypeId(positionType.getPositionTypeId());
+            Optional<Position> position = account.getPositionByPositionType(positionType);
 
 
             if(position.isPresent())

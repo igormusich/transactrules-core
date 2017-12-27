@@ -126,7 +126,7 @@ public class AccountTypeRepositoryIntegrationTest {
         accountRepository.save(account);
 
 
-        Optional<Position> currentPosition = account.getPositionByPositionTypeId(currentPositionType.get().getPositionTypeId());
+        Optional<Position> currentPosition = account.getPositionByPositionType(currentPositionType.get());
 
         assertThat(currentPosition.get().getAmount(), is(BigDecimal.valueOf(100)));
     }

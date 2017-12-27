@@ -63,8 +63,8 @@ public class Account {
         isActive = active;
     }
 
-    public Optional<Position> getPositionByPositionTypeId(String positionTypeId){
-        return positions.stream().filter(p->p.isPositionType(positionTypeId) ).findFirst();
+    public Optional<Position> getPositionByPositionType(PositionType positionType){
+        return positions.stream().filter(p->p.isPositionType(positionType) ).findFirst();
     }
 
     public Optional<DateValue> getDateByDateType(DateType dateType){
