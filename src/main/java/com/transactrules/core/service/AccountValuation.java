@@ -1,15 +1,10 @@
 package com.transactrules.core.service;
 
 import com.transactrules.core.model.*;
-import com.transactrules.core.repository.TransactionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.swing.text.html.Option;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 public abstract class AccountValuation
